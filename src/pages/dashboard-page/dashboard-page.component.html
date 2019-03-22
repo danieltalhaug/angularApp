@@ -1,0 +1,40 @@
+<div class="container">
+      <div class="card-title">
+            <h3>Weather For Norway Oslo</h3>
+      </div>
+      <div class="[ card ]" *ngFor="let weather of weatherDetail">
+            Sky Conditions: {{ weather.weather_state_name }}<br />
+            Min Tempreture: {{ weather.min_temp }}<br />
+            Max Tempreture: {{ weather.max_temp }}<br />
+            Actual Tempreture: {{ weather.the_temp }}<br />
+            Date Created: {{ weather.created }}<br />
+            Humidity: {{ weather.humidity }}<br />
+      </div> <!-- Weather end -->
+
+      <div class="card-title">
+            <h3>Random Cat fact</h3>
+      </div>
+      <div class="[ card ]">
+            Random fact: {{ null }}
+            <!-- removed to remove errors from browser. -->
+      </div> <!-- Cat facts end -->
+
+      <div class="card-title">
+            <h3>Age of Empires civilizations</h3>
+      </div>
+      <div class="[ card ]" *ngFor="let ageofempires of ageOfEmpiresDetail">
+            Name: {{ ageofempires.name }} <br />
+            Expansion: {{ ageofempires.expansion }} <br />
+            Army type: {{ ageofempires.army_type }} <br />
+            Team bonus: {{ ageofempires.team_bonus }} <br />
+      </div> <!-- Age of empires end -->
+
+      <div class="card-title">
+            <h3>Random Chuck Norris Jokes</h3>
+      </div>
+      <div class="[ card ]">
+            Random joke: {{ null }}
+            <!-- This keeps throwing errors like undefined just like the cat facts. -->
+      </div> <!-- Chuck norris cannot be ended -->
+
+</div>

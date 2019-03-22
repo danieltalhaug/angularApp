@@ -1,0 +1,20 @@
+.errors{
+    color: red;
+}
+.login {
+   &-center {
+    text-align: center;
+	width: 350px;
+	height: 220px;
+	background-color: white;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    border: 2px solid #0069d9;
+    border-radius: 5px;
+    }
+     
+}

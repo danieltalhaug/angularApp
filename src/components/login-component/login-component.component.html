@@ -1,0 +1,12 @@
+<div class="[ login login-background_blue ]">
+  <div class="[ login-center ]">
+    <h1>Please login</h1>
+    <form [formGroup]="form" (ngSubmit)="userDetails(form.value)">
+      <input type="text" placeholder="Please enter a username" formControlName="username" /><br />
+      <span class="[ errors ]" *ngIf="isUsername">Please enter a correct username</span><br />
+      <input type="password" placeholder="Please enter a password" formControlName="password" /><br />
+      <span class="[ errors ]" *ngIf="isPassword">Please enter a correct Password</span><br />
+      <button class="btn btn-primary" type="Submit">Submit</button>
+    </form>
+  </div>
+</div>
